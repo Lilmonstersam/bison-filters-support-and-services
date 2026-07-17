@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commercial HVAC Filter Management Services | Kitting, Delivery &amp; Reminders | Bison Filters</title>
+<meta name="description" content="Cut the labour cost of commercial HVAC maintenance. Filter kitting marked per unit number, direct-to-site delivery with old filter removal, and automated air filter replacement reminders. Australia-wide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#0275D6; --blue-mid:#2C89D8; --navy:#00487E; --navy-dark:#01213C; --navy-text:#012E54;
+  --grey:#717171; --line:#CECECE; --bg-grey:#F0F0F0;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--grey);background:#fff;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.scandia{font-family:Scandia,"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",Arial,sans-serif;letter-spacing:-0.01em}
+a{text-decoration:none;color:var(--blue)}
+a:hover{color:var(--navy)}
+img{display:block}
+.wrap{max-width:1520px;margin:0 auto;padding:0 24px}
+.eyebrow{font-weight:700;font-size:16px;letter-spacing:0.2em;text-transform:uppercase;color:var(--grey)}
+.eyebrow.on-dark{color:#fff}
+h1{font-weight:800;font-size:clamp(30px,3.4vw,45px);line-height:1.1;color:#fff;text-transform:capitalize}
+h2{font-weight:800;font-size:clamp(26px,2.8vw,38px);line-height:1.1;color:var(--blue-mid);text-transform:capitalize;text-wrap:pretty}
+.icon{width:48px;height:48px;stroke:var(--blue-mid);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.icon-sm{width:20px;height:20px;stroke:var(--blue-mid);stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;margin-top:2px}
+/* Buttons */
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:10px;padding:10px 20px;font-weight:600;font-size:16px;line-height:1;cursor:pointer;transition:background .15s,color .15s,box-shadow .15s}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--navy);color:#fff}
+.btn-outline-blue{box-shadow:inset 0 0 0 1px var(--blue);color:var(--blue);background:#fff}
+.btn-outline-blue:hover{background:var(--blue);color:#fff}
+.btn-white{background:#fff;color:var(--blue-mid)}
+.btn-white:hover{background:var(--bg-grey);color:var(--navy)}
+.btn-outline-white{box-shadow:inset 0 0 0 1px #fff;color:#fff;background:transparent}
+.btn-outline-white:hover{background:#fff;color:var(--blue-mid)}
+.btn-navy{background:var(--navy-dark);color:#fff;text-transform:uppercase;font-size:14px;font-weight:700;letter-spacing:.05em;padding:14px 24px}
+.btn-navy:hover{background:#000;color:#fff}
+/* Header */
+.topbar{background:var(--navy-dark);height:45px;display:flex;align-items:center}
+.topbar nav{display:flex;gap:36px;margin-left:auto}
+.topbar a{color:#fff;font-size:16px;font-weight:400}
+.topbar a:hover{color:#9CC9EE}
+.mainbar{background:#fff;border-bottom:1px solid var(--line)}
+.mainbar .wrap{display:flex;align-items:center;gap:32px;height:101px}
+.logo{background:var(--navy-dark);padding:10px 14px;flex-shrink:0}
+.logo img{height:44px;width:auto}
+.mainnav{display:flex;gap:32px;align-items:center}
+.mainnav a{font-weight:500;font-size:19px;color:#132738}
+.mainnav a:hover,.mainnav a.active{color:var(--blue)}
+.search{flex:1;max-width:614px;height:52px;border-radius:32px;box-shadow:inset 0 0 0 1px var(--line);display:flex;align-items:center;padding:0 24px;color:#ACACAC;font-weight:500;font-size:19px;gap:12px}
+.hdr-icons{display:flex;align-items:center;gap:22px;margin-left:auto}
+.hdr-icons .icon{width:28px;height:28px;stroke:var(--blue)}
+.hdr-divider{width:1px;height:51px;background:var(--blue)}
+.hdr-phone{font-weight:700;font-size:22px;color:var(--blue);white-space:nowrap}
+/* Hero */
+.hero{position:relative;background:linear-gradient(rgba(0,72,126,0.85),rgba(0,72,126,0.85)),url(../assets/ductwork.jpg) center/cover no-repeat;clip-path:polygon(0 0,100% 0,100% 83%,89.6% 100%,10.3% 100%,0 82.9%);padding:120px 0 170px}
+.hero-inner{max-width:960px;display:flex;flex-direction:column;gap:23px}
+.hero p.sub{font-size:23px;line-height:1.35;color:#fff}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:30px;margin-top:12px}
+/* Trust cards */
+.trust-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px;margin-top:-90px;position:relative;z-index:2}
+.trust-card{background:#fff;border-radius:16px;box-shadow:16px 19px 32px rgba(0,0,0,0.16);padding:28px 20px;display:flex;flex-direction:column;gap:24px;justify-content:center;align-items:center;text-align:center;font-weight:600;font-size:16px;color:var(--grey);text-transform:capitalize}
+/* Steps (the three services) */
+.section{padding:100px 0}
+.section-head{display:flex;flex-direction:column;gap:24px;max-width:860px;margin-bottom:60px}
+.step{display:flex;gap:39px;align-items:stretch}
+.step + .step{margin-top:24px}
+.step-num-col{width:70px;display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+.step-num{width:70px;height:70px;border-radius:100px;background:var(--blue-mid);color:#fff;font-weight:600;font-size:32px;display:flex;justify-content:center;align-items:center}
+.step-line{width:1px;flex:1;background:var(--blue-mid);margin-top:8px}
+.step:last-child .step-line{display:none}
+.step-card{flex:1;border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px var(--blue-mid);padding:36px 50px;display:flex;flex-direction:column;gap:16px;margin-bottom:24px}
+.step-card h3{font-weight:800;font-size:23px;line-height:1.15;color:var(--blue-mid);text-transform:capitalize}
+.step-cols{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start}
+.step-checks{display:flex;flex-direction:column;gap:12px;min-width:300px}
+.step-checks div{display:flex;gap:10px;align-items:flex-start;font-size:16px}
+.step-cta{margin-top:6px}
+@media(max-width:900px){.step-cols{grid-template-columns:1fr}.step{gap:20px}.step-card{padding:28px 24px}}
+/* Why Bison split */
+.why{display:grid;grid-template-columns:1fr 1fr;min-height:900px}
+.why-left{background:linear-gradient(240.812deg,var(--blue-mid) 12.2%,var(--navy) 90.48%);padding:100px 100px 100px 24px;display:flex;justify-content:flex-end}
+.why-left-inner{max-width:660px;width:100%;display:flex;flex-direction:column;gap:47px}
+.why-head{display:flex;flex-direction:column;gap:24px}
+.why-head h2{color:#fff}
+.why-head p{color:#fff;font-size:16px}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:28px}
+.why-card{background:#fff;border-radius:16px;padding:30px 20px 20px;display:flex;flex-direction:column;gap:20px}
+.why-card h3{font-weight:600;font-size:23px;line-height:1.15;color:var(--grey);text-transform:capitalize}
+.why-card p{font-size:16px}
+.why-photo{background:url(../assets/ductwork.jpg) 50% 50%/cover no-repeat}
+@media(max-width:1000px){.why{grid-template-columns:1fr}.why-photo{min-height:320px}.why-left{padding:70px 24px}}
+/* Difference panel */
+.diff-panel{border-radius:16px;box-shadow:inset 0 0 0 1px var(--blue-mid);padding:50px;display:flex;flex-direction:column;gap:50px}
+.diff-panel h3{font-weight:800;font-size:32px;line-height:1.1;color:var(--blue-mid);text-transform:capitalize}
+.diff-copy{display:flex;flex-direction:column;gap:16px;font-size:16px}
+.stats{display:flex;flex-wrap:wrap;gap:40px;justify-content:center}
+.stat{border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px var(--blue-mid),0 4px 4px rgba(0,0,0,0.25);padding:24px 50px;display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center;min-width:255px}
+.stat b{font-weight:800;font-size:45px;line-height:1;color:var(--blue-mid)}
+.stat span{font-weight:700;font-size:19px;color:var(--grey)}
+/* CTA band */
+.cta-band{background:linear-gradient(240.812deg,var(--blue) 12.2%,var(--navy) 90.48%);padding:80px 0;text-align:center;color:#fff}
+.cta-band h2{color:#fff;margin-top:16px}
+.cta-band p{font-size:19px;margin-top:16px;color:#fff}
+.cta-band .hero-ctas{justify-content:center;margin-top:36px}
+/* Breadcrumb */
+.breadcrumb{padding:16px 0;font-size:14px}
+.breadcrumb a{color:var(--blue);font-weight:500}
+.breadcrumb span{color:var(--grey)}
+/* Footer */
+footer{background:var(--navy-dark);color:#fff}
+.foot-main{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding:70px 0 50px}
+.foot-brand{display:flex;flex-direction:column;gap:20px}
+.foot-brand img{height:52px;width:auto}
+.foot-tag{font-size:16px;color:#C9D6E2}
+.foot-contact{display:flex;flex-direction:column;gap:6px;font-size:16px}
+.foot-contact b{color:var(--blue);font-weight:700}
+.foot-contact a{color:#fff}
+.foot-contact a:hover{color:#9CC9EE}
+footer h4{font-weight:700;font-size:17px;margin-bottom:18px;color:#fff}
+.foot-links{display:flex;flex-direction:column;gap:10px;font-size:15px}
+.foot-links a{color:#C9D6E2}
+.foot-links a:hover{color:#fff}
+.foot-bottom{border-top:1px solid rgba(255,255,255,0.15);padding:22px 0;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;font-size:14px;color:#C9D6E2}
+.foot-bottom a{color:#C9D6E2}
+.foot-bottom a:hover{color:#fff}
+@media(max-width:900px){.foot-main{grid-template-columns:1fr 1fr}}
+@media(max-width:1100px){.mainnav,.search,.topbar nav a:nth-child(1){display:none}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type":"Service","name":"Filter Kitting","serviceType":"Commercial HVAC filter kitting","description":"Filters bundled into unit-specific kits, labelled by unit number and matched to your site's filter register.","provider":{"@type":"Organization","name":"Bison Filters","url":"https://www.bisonfilters.com.au/","telephone":"1300 773 813"},"areaServed":"AU"},
+    {"@type":"Service","name":"Delivery and Drop-off","serviceType":"Direct-to-site filter delivery and old filter removal","description":"Same-day dispatch on stocked items before 3pm, Australia-wide delivery direct to site, with old filter removal and disposal in Adelaide and Melbourne metro.","provider":{"@type":"Organization","name":"Bison Filters","url":"https://www.bisonfilters.com.au/","telephone":"1300 773 813"},"areaServed":"AU"},
+    {"@type":"Service","name":"Automated Replacement Reminders","serviceType":"HVAC preventative maintenance reminders","description":"A filter database by site and unit number with automated reminders sent before each scheduled change, and log-in reordering.","provider":{"@type":"Organization","name":"Bison Filters","url":"https://www.bisonfilters.com.au/","telephone":"1300 773 813"},"areaServed":"AU"},
+    {"@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.bisonfilters.com.au/"},
+      {"@type":"ListItem","position":2,"name":"Filter Management Services","item":"https://www.bisonfilters.com.au/filter-management-services.aspx"}]}
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="topbar scandia">
+    <div class="wrap" style="display:flex;align-items:center;width:100%">
+      <nav>
+        <a href="https://www.bisonfilters.com.au/t-about.aspx">About Us</a>
+        <a href="https://www.bisonfilters.com.au/contactus.aspx">Contact Us</a>
+        <a href="https://www.bisonfilters.com.au/login.aspx">Log-in</a>
+      </nav>
+    </div>
+  </div>
+  <div class="mainbar scandia">
+    <div class="wrap">
+      <a class="logo" href="https://www.bisonfilters.com.au/default.aspx" aria-label="Bison Filters home">
+        <img src="https://www.bisonfilters.com.au/skins/Skin_100/bison-home/images/bison-logo.png" alt="Bison Filters logo">
+      </a>
+      <nav class="mainnav" aria-label="Main navigation">
+        <a href="https://www.bisonfilters.com.au/default.aspx">Product Range ▾</a>
+        <a href="https://www.bisonfilters.com.au/t-industries.aspx">Industries</a>
+        <a href="./" class="active">Services</a>
+      </nav>
+      <div class="search" role="search">
+        <svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        Search
+      </div>
+      <div class="hdr-icons">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        <div class="hdr-divider" aria-hidden="true"></div>
+        <a class="hdr-phone" href="tel:1300773813">Phone&nbsp;&nbsp;1300 773 813</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Breadcrumb -->
+<div class="wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../">Home</a> <span>/</span> <span>Filter Management Services</span>
+  </nav>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <p class="eyebrow on-dark" style="font-size:19px">Filter Management Services</p>
+      <h1>Commercial HVAC filter management, handled end to end</h1>
+      <p class="sub">Wrong sizes on site. Missed change-outs. Spent filters piling up in the plant room. Bison removes the friction for service teams and facility managers running maintenance across large sites, with 80+ filters per building.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-white" href="https://www.bisonfilters.com.au/createaccount.aspx">Open a Trade Account</a>
+        <a class="btn btn-outline-white" href="https://www.bisonfilters.com.au/contactus.aspx">Speak to a Technical Expert</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust cards -->
+<div class="wrap">
+  <div class="trust-row">
+    <div class="trust-card">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+      Same-day dispatch on stocked items before 3PM
+    </div>
+    <div class="trust-card">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      Australia-wide delivery, direct to site
+    </div>
+    <div class="trust-card">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+      ISO 16890 &amp; ASHRAE 52.2 compliant
+    </div>
+    <div class="trust-card">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+      Contract pricing for maintenance programmes
+    </div>
+  </div>
+</div>
+
+<!-- The three services as numbered steps -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The Services</p>
+      <h2>Three services that cut labour, not corners</h2>
+      <p>Built for service managers and coordinators quoting maintenance contracts at scale, and facility managers running multiple sites from one register.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-num-col"><div class="step-num">01</div><div class="step-line"></div></div>
+      <div class="step-card">
+        <h3>Filter kitting: the right filters, marked for the right unit</h3>
+        <div class="step-cols">
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <p>Send us your site list and we bundle every change-out into unit-specific kits. Each kit is labelled by unit number and matched to your filter register, so when a large order lands on site your techs know exactly what goes in what unit. For multi-site contractors, kitting standardises the job across every location and every crew.</p>
+            <a class="btn btn-primary step-cta" href="https://www.bisonfilters.com.au/quickquote.aspx">Build My Filter Kits</a>
+          </div>
+          <div class="step-checks">
+            <div><svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Kits locked in by site or building name</div>
+            <div><svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Every filter marked by unit number</div>
+            <div><svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Qtys, sizes and grades captured in the kit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num-col"><div class="step-num">02</div><div class="step-line"></div></div>
+      <div class="step-card">
+        <h3>Delivery &amp; drop-off: to site, and away again</h3>
+        <div class="step-cols">
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <p>Order before 3PM and stocked items are out the door the same day, delivered Australia-wide, direct to the loading dock, plant room or roof access point your team nominates. In Adelaide and Melbourne metro, add drop-off collection and we remove your old filters for compliant disposal. One delivery, one collection, zero double-handling of spent media.</p>
+            <a class="btn btn-primary step-cta" href="https://www.bisonfilters.com.au/contactus.aspx">Arrange Site Delivery</a>
+          </div>
+          <div class="step-checks">
+            <div><svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Same-day dispatch on stocked items before 3PM</div>
+            <div><svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Direct to site, not a depot four suburbs away</div>
+            <div><svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Old filter disposal, Adelaide &amp; Melbourne metro</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num-col"><div class="step-num">03</div><div class="step-line"></div></div>
+      <div class="step-card">
+        <h3>Replacement reminders: preventative maintenance on autopilot</h3>
+        <div class="step-cols">
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <p>Log in to your filter database, broken down by site and unit number. Set the service interval each site needs and we send automated reminders before every change is due, so your HVAC preventative maintenance programme never depends on a spreadsheet or somebody's memory. Reorders take minutes because the specification is already on file.</p>
+            <a class="btn btn-primary step-cta" href="https://www.bisonfilters.com.au/createaccount.aspx">Set Up My Schedule</a>
+          </div>
+          <div class="step-checks">
+            <div><svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Filter register by site and unit number</div>
+            <div><svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Reminders timed to your service interval</div>
+            <div><svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Log in and reorder by site or unit number</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Bison split -->
+<section class="why">
+  <div class="why-left">
+    <div class="why-left-inner">
+      <div class="why-head">
+        <p class="eyebrow on-dark">Why Bison</p>
+        <h2>Built for organisations that can't afford downtime</h2>
+        <p>These aren't extras. They're what separates a filter partner from a filter supplier.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"></path><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
+          <h3>On-site audits</h3>
+          <p>We come to you. A full assessment of your current filter setup before any commitment.</p>
+        </div>
+        <div class="why-card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+          <h3>Filter database management</h3>
+          <p>Your complete filter register by site and unit number, maintained by us. No spreadsheets, no guesswork.</p>
+        </div>
+        <div class="why-card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          <h3>Replacement reminders</h3>
+          <p>Proactive scheduling so you're never caught out at a compliance check.</p>
+        </div>
+        <div class="why-card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <h3>Delivery to site</h3>
+          <p>Not to a depot or warehouse, but to the actual installation location your team nominates.</p>
+        </div>
+        <div class="why-card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+          <h3>Used filter disposal</h3>
+          <p>Removal and disposal handled in Adelaide and Melbourne metro. One less thing on the maintenance checklist.</p>
+        </div>
+        <div class="why-card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          <h3>Contract pricing</h3>
+          <p>Fixed pricing across the agreement, so maintenance contracts can be quoted with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="why-photo" role="img" aria-label="Commercial HVAC ductwork in a plant room"></div>
+</section>
+
+<!-- The Bison difference -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The Bison Difference</p>
+      <h2>A partner, not just another supplier on the approved list</h2>
+    </div>
+    <div class="diff-panel">
+      <div class="diff-copy">
+        <h3>Less admin. More reliability. Zero surprises.</h3>
+        <p>Most filter suppliers take the order and ship the box. Bison manages the programme: kitting, reminders, records, delivery, disposal. Seasonair Commercial Air Conditioning cut required site visits by 50% after restructuring their filter programme with Bison. For service teams and facility managers running multiple sites or complex maintenance schedules, that's a meaningful operational difference.</p>
+        <p>We work best with organisations looking for a long-term filtration partner: someone who already knows your site, your specs, and your schedule.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>50%</b><span>Fewer site visits<br>- Seasonair</span></div>
+        <div class="stat"><b>3PM</b><span>Same-day cutoff</span></div>
+        <div class="stat"><b>AU-Wide</b><span>Delivery coverage</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA band -->
+<section class="cta-band">
+  <div class="wrap">
+    <p class="eyebrow on-dark">Get Started</p>
+    <h2>Streamline your HVAC maintenance today</h2>
+    <p>Whether you're managing a national portfolio or a single facility, our team provides the technical backup you need.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-navy" href="https://www.bisonfilters.com.au/createaccount.aspx">Open a Trade Account</a>
+      <a class="btn btn-outline-white" href="https://www.bisonfilters.com.au/contactus.aspx">Speak to a Technical Expert</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="scandia">
+  <div class="wrap">
+    <div class="foot-main">
+      <div class="foot-brand">
+        <img src="https://www.bisonfilters.com.au/skins/Skin_100/bison-home/images/bison-logo.png" alt="Bison Filters logo">
+        <p class="foot-tag">Australia's Partner in High-Performance Commercial Air Filtration.</p>
+        <div class="foot-contact">
+          <p><b>Phone</b>&nbsp;&nbsp;<a href="tel:1300773813">1300 773 813</a></p>
+          <p><b>Email</b>&nbsp;&nbsp;<a href="mailto:info@bisonfilters.com.au">info@bisonfilters.com.au</a></p>
+        </div>
+      </div>
+      <div>
+        <h4>Product Categories</h4>
+        <div class="foot-links">
+          <a href="https://www.bisonfilters.com.au/c-79-cardboard-pleated-filters.aspx">Cardboard Pleated Filters</a>
+          <a href="https://www.bisonfilters.com.au/c-78-filter-media.aspx">Filter Media</a>
+          <a href="https://www.bisonfilters.com.au/c-85-v-form-filters.aspx">V-Form Filters</a>
+          <a href="https://www.bisonfilters.com.au/c-89-hepa-filter.aspx">HEPA Filters</a>
+          <a href="https://www.bisonfilters.com.au/c-88-Activated-Carbon-Filters.aspx">Activated Carbon Filters</a>
+          <a href="https://www.bisonfilters.com.au/c-102-maxi-pleat-filter.aspx">Maxi Pleat Filters</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="foot-links">
+          <a href="https://www.bisonfilters.com.au/t-about.aspx">About Us</a>
+          <a href="https://www.bisonfilters.com.au/t-industries.aspx">Industries</a>
+          <a href="https://www.bisonfilters.com.au/createaccount.aspx">Open a Trade Account</a>
+          <a href="https://www.bisonfilters.com.au/login.aspx">Login to Trade Account</a>
+          <a href="https://www.bisonfilters.com.au/contactus.aspx">Contact Us</a>
+        </div>
+      </div>
+      <div>
+        <h4>Trading Hours</h4>
+        <div class="foot-links">
+          <p style="color:#C9D6E2">7.30am - 5.00pm<br>Monday to Friday</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>&copy; Bison Filters. All Rights Reserved</p>
+      <div style="display:flex;gap:24px">
+        <a href="https://www.bisonfilters.com.au/t-terms.aspx">Terms of Use</a>
+        <a href="https://www.bisonfilters.com.au/t-privacy.aspx">Privacy Policy</a>
+        <a href="https://www.bisonfilters.com.au/sitemap.aspx">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
